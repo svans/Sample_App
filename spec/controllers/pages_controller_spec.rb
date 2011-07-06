@@ -12,7 +12,7 @@ describe PagesController do
     it "should have the right title" do
     get 'home'
     response.should have_selector("title",
-                     :content => "Yo, Welcome Home")
+                     :content => "")
     end
     
     it "should have a non-blank body" do
@@ -29,7 +29,7 @@ describe PagesController do
     it "should have the right title" do
     get 'contact'
     response.should have_selector("title",
-                     :content => "Yo, Welcome Home")
+                     :content => "")
     end
   end
 
@@ -41,7 +41,7 @@ describe PagesController do
     it "should have the right title" do
     get 'about'
     response.should have_selector("title",
-                     :content => "Yo, Welcome Home")
+                     :content => "")
     end
   end
 end
